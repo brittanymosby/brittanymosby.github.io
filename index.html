@@ -1,104 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
+  <head>
+    <meta charset="utf-8">
+    <!-- Needs a Title -->
+    <title>Susan Crowe Mosteller</title>
+    <!-- Mobile Friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <title>Brittany L. Mosby</title>
+    <!-- Internal bootstrap themed CSS. Reference: https://bootswatch.com/flatly/#typography-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
+    <!-- External CSS - un-comment out the line below and create a main.css in a styles folder -->
+    <!-- <link rel="stylesheet" href="styles/main.css"/> -->
+    <!-- For menus and common javascript things that use jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- For Math Formulas - Basic Configuration -->
+<script type="text/javascript" src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Ready-to-go icons - check out this site for a reference http://fontawesome.io/icons/ -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Google analytics -->
+    <!-- <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-82640741-1', 'auto');
+      ga('send', 'pageview'); -->
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
+    <!-- </script> -->
 
 
+  </head>
 
-</head>
+  <body>
+    <!-- Keep the DIV container to add the margins and make it scalable for mobile -->
+    <nav class="navbar navbar-default">
 
-<body>
+      <!-- <div class="container-fluid">
 
-    <nav class="navbar navbar-inverse navbar-toggleable-md bg-inverse">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        <a class="navbar-brand" href="./index.html">B. Mosby</a>
+        <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> <a class="navbar-brand" href="#">Brand</a> </div> -->
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          For Students Only
-        </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Binomial Distribution</a>
-                        <a class="dropdown-item" href="#">Normal Distribution</a>
-                        <a class="dropdown-item" href="#">Student-t Distribution</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Inference Applications
-        </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Confidence Intervals</a>
-                        <a class="dropdown-item" href="#">Hypothesis Testing</a>
-                    </div>
-                </li>
-            </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
-        </div>
+        <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div> -->
+      <!-- </div> -->
     </nav>
 
-
     <div class="container">
-        <div class="jumbotron">
-            <h1>Brittany L Mosby</h1>
-            <p>Educator. Access advocate. </p>
-        </div>
+
+      <div class="jumbotron">
 
         <div class="row">
-            <div class="col">
-                <h2>Probability Distributions</h2>
-                <ul style="list-style-type:none">
-                    <li> <a href="./binomialcalc.html" target="_blank"> Binomial Distribution</a> </li>
-                    <li> <a href="./normalcalc.html" target="_blank">Normal Distribution</a> </li>
-                    <li> <a href="./tdistribution.html" target="_blank">Student-t Distribution</a> </li>
-                </ul>
-            </div>
-            <div class="col">
-                <h2>Inference Applications</h2>
-                <ul style="list-style-type: none">
-                    <li> <a href="./confidenceint.html" target="_blank">Estimating a Population Parameter </a> </li>
-                    <li> <a href="./hyptests.html" target="_blank">Testing a Claim about a Population Parameter</a></li>
-                </ul>
-            </div>
+
+          <div class="col-md-8">
+            <h2>Brittany L. Mosby</h2>
+            <!-- <p><a href="https://psccmath.github.io/math1830" class="btn btn-primary btn-lg">Applied Calculus</a></p> -->
+          </div>
+
+          <div class="col-md-4"> <img src="images/zenstones.jpg" alt="Image of zen stones stacked" class="img-rounded" width="275" height="183"> </div>
         </div>
-    </div>
+      </div>
+      <!-- begin row 1 -->
 
-    <!-- <footer class="footer"> -->
-    <!-- Well this works -->
-    <!-- hello
-    <div class="container">hello2
-      <span class="text-muted">Place sticky footer content here.</span>
-    </div> -->
-    <!-- </footer> -->
+      <div class="row">
 
-</body>
+
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading">
+              <h3 class="panel-title">Instructor Information</h3> </div>
+
+            <div class="panel-body">
+              <p>Pellissippi State Community College </p>
+              <p>Assistant Professor, Mathematics </p>
+
+              <p>Portable A 101 </p>
+              <p> <a href="8656946660"> 865.694.6660 </a></p>
+              <p> <a href="mailto:scmosteller@pstcc.edu">scmosteller@pstcc.edu </a></p>
+
+
+              <div class="btn-toolbar pull-right">  <a class="btn btn-default" role="button" href="schedulesp17.pdf" target="_blank">Campus Schedule</a>
+                <!-- ending of btn toolbar -->
+              </div>
+
+<!-- ending of panel -->
+            </div>
+          </div>
+          <!-- ending of panel 1 of row-->
+
+
+
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading">
+              <h3 class="panel-title">MATH 1830</h3> </div>
+
+            <div class="panel-body">
+              <p> Applied Calculus </p>
+              <p>Topics include differentiation and integration of polynomial, rational, exponential, and
+logarithmic functions and methods of numerical integration. Topics from business
+modeling, such as economic applications and case studies, are explored with computer
+simulations, computer labs, or calculators. A graphing calculator is required.
+</p> <a class="btn btn-default pull-right" role="button" href="https://psccmath.github.io/math1830" target="_blank">Course Materials</a> </div>
+          </div>
+          <!-- ending of panel 2 of row-->
+
+
+
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading">
+              <h3 class="panel-title">MATH 1530</h3> </div>
+
+            <div class="panel-body">
+              <P>Introductory Statistics</p>
+              <p>Topics include elementary probability theory, concepts of descriptive statistics, discrete
+and continuous distributions, hypothesis testing, confidence intervals, sample sizes,
+correlation, regression, multinomial and contingency tables. Noncalculus based.
+Computer applications will be investigated.</p>
+<!-- <a class="btn btn-default pull-right" role="button" href="http://www.wiris.com/editor/demo/en/mathml-latex" target="_blank">Wiris</a> </div> -->
+          </div>
+          <!-- ending of panel 3 of row-->
+        </div>
+        <!-- ending of first row -->
+
+      <!-- begin 2nd row -->
+
+      <div class="row">
+
+        <!-- <div class="col-md-4">
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading">
+              <h3 class="panel-title">Zip File to Download</h3> </div>
+
+            <div class="panel-body">
+              <p> Contains the css file, the images folder, and the Word document we are converting to Markdown. </p>
+              <ul>
+                <li>Download the zip file.</li>
+                <li> Go to your downloads folder</li>
+                <li>Open the zip file</li>
+                <li>Click "extract all" button</li>
+              </ul><a class="btn btn-default pull-right" role="button" href="accessmarkdown.zip" target="_blank">Access Markdown Zip File</a> </div>
+          </div>
+          ending of panel 1 of row 2-->
+        </div>
+
+        <!-- <div class="col-md-4">
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading">
+              <h3 class="panel-title">Powerpoint Presentation</h3> </div>
+
+            <div class="panel-body">
+              <p>Copy of the Inservice 2016 Markdown Powerpoint Presentation</p> <a class="btn btn-default pull-right" role="button" href="inservicemarkdown2016pptSept27.pdf" target="_blank">PDF of Powerpoint</a> </div>
+          </div>
+          ending of panel 2 of row 2-->
+        </div>
+
+        <div class="col-md-4">
+          <!-- <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">panel title goes here</h3>
+        </div>
+        <div class="panel-body">
+        <p>
+          stuff goes here
+        </p>
+        </div>
+      </div> -->
+          <!-- ending of panel 3 of row 2-->
+        </div>
+        <!-- ending of first row -->
+      </div>
+      <!-- Ending for DIV Container -->
+    <!-- </div> -->
+    <script>
+    var clip = new Clipboard('.btn');
+
+    clip.on('success', function(e) {
+      $('.copied').show();
+      $('.copied').fadeOut(1000);
+    });
+    </script>
+
+  </body>
 
 </html>
