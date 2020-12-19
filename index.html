@@ -1,138 +1,153 @@
 <!DOCTYPE html>
-<html>
-<title>Dr. B. L. Mosby</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: 'Open Sans', sans-serif;}
-h1,h2,h3,h4,h5,h6 {font-family: 'Bree Serif', serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
+<!--
+Puzzle Template
+http://www.templatemo.com/tm-477-puzzle
+-->
+    <title>Dr. Brittany Mosby</title>
+</head>
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url("img/grad-crop.jpg");
-  min-height: 90%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("img/computerport.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("img/background-image.jpg");
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-</style>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">BIO</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">MY WORK</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <h1><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Educator. Scholar. Dreamer. Go-Getter.</span></h1>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">Dr. Brittany L. Mosby</h3>
-  <p class="w3-center"><em>Knowledge is power, community is strength, and a positive attitude is everything.</em></p>
-  <p class="w3-center">Website Coming Soon!</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <!-- <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br> -->
-      <img src="img/DSC_0081 cropped.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    <div class="fixed-header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Dr. Brittany Mosby</a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#story">My Story</a></li>
+                    <li><a href="#clients">My Work</a></li>
+                    <li><a class="external" href="https://www.linkedin.com/in/brittanymosby/" target="_blank">LinkedIn</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-  </div>
+    
+    <div class="container">
+        <section class="col-md-12 content" id="home">
+           <div class="col-lg-6 col-md-6 content-item">
+               <img src="images/DSC_0114.jpg" alt="Image" class="tm-image">
+           </div>
+           
+           <div class="col-lg-6 col-md-6 content-item content-item-1 background ">
+               <h2 class="main-title text-center dark-blue-text">Educator | Dreamer | Scholar</h2>
+               <p class="section-text"> <em>A data geek and ed policy wonk. Tennesse's head cheerleader for HBCUs. I stand for inclusive excellence, liberated pedagogy, and getting rid of College Algebra as the default first-year math course. </em></p>
+           </div>
+       </section>
 
-  
+       <section class="col-md-12 content padding" id="story">
+        <div class="col-lg-6 col-md-6 col-md-push-6 content-item">
+           <img src="images/peabody.jpg" alt="Image" class="tm-image">
+       </div>
+       
+       <div class="col-lg-6 col-md-6 col-md-pull-6 content-item background flexbox">
+           <h2 class="section-title">A Lifelong Passion</h2>
+            <p class="section-text"><em>"Knowledge is Power, Community is Strength, and a Positive Attitude is Everything."</em></p>
+            <p class="section-text">The first generation in my family to attend college, my grandfather was a math major at Morehouse College (C'52), my grandmother majored in biology at Spelman College (C'51). My father, an engineer and city councilman and my mother, a non-profit doyenne, raised me and my siblings with the belief that to be successful was to learn and serve, both as much as possible.</p>
+            <p class="section-text">What I wanted to be "when I grew up" changed regularly, starting with an author in first grade, an astronaut through middle school, then in high school, a pediatrician, a lawyer, and the first African American woman president of the United States. I am incredibly blessed that through those myriad career changes, my parents and teachers remained equally supportive: sending me to Space Camp, driving all over for Mock Trial Competitions, and buying supplies for endless, endless campaign posters for student council. What remained constant, was the knowledge that continuing my education would be the key to unlocking my future.</p>
+            <p class="section-text">Today, I strive to be the best parts of all the people who raised me: a teacher, an advocate, and a servant leader. I am most passionate about supporting HBCUs, championing universal mathematical literacy, influencing public policy, and ensuring equitable access to and success in postsecondary opportunities. I honor the legacy of my hard-working and determined ancestors by dedicating everyday to leveraging the priviliges I have been afforded to make the world a better place.</p>
+            <p class="section-text"></p>
+       </div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16 w3-opacity w3-hover-opacity-off">
-   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+   </section>
+
+
+   <section class="col-md-12 content" id="clients">
+       <div class="col-lg-6 col-md-6 content-item">
+        <img src="images/kendrick.jpg" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 content-item background flexbox">
+           <h2 class="section-title">My Work</h2>
+
+       </div>
+   </section>
+
+
+   <section class="col-md-12 content" id="contact">
+       <div class="col-lg-6 col-md-6 col-md-push-6 content-item">
+        <img src="images/computerport.JPG" alt="Image" class="tm-image">
+       </div>
+       <div class="col-lg-6 col-md-6 col-md-pull-6 content-item background flexbox">
+           <h2 class="section-title">Contact Me</h2>
+           <p class="about-text">Please feel free to reach out about presentations for your group, collaboration, or questions about my work! </p> <br>
+           <p class="about-text">Email: Contact@BrittanyMosby.com</p>
+           <!-- <p class="about-text">Text: (317) 4-BMOSBY</p> -->
+    </div>
+
+</section>
+
+<footer class="col-md-12 content" id="externals">
+ <div class="col-lg-6 col-md-6 last">
+    
+</div>
+<!-- <div class="col-lg-6 col-md-6 background last about-text-container">
+   <h2 class="section-title">Contact Me</h2>
+   <p class="about-text">Please feel free to reach out about presentations for your group, collaboration, or questions about my work! </p> <br>
+   <p class="about-text">Email: Contact@BrittanyMosby.com</p>
+   <p class="about-text">Text: (317) 4-BMOSBY</p>
+</div> -->
 </footer>
- 
+
+</div>
+
+<div class="text-center footer">
+	<div class="container">
+		Copyright @ 2020 B. L. Mosby
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
+
+// Check scroll position and add/remove background to navbar
+function checkScrollPosition() {
+    if($(window).scrollTop() > 50) {
+      $(".fixed-header").addClass("scroll");
+  } else {        
+      $(".fixed-header").removeClass("scroll");
+  }
 }
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+$(document).ready(function () {   
+    // Single page nav
+    $('.fixed-header').singlePageNav({
+        offset: 59,
+        filter: ':not(.external)',
+        updateHash: true        
+    });
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
+    checkScrollPosition();
+
+    // nav bar
+    $('.navbar-toggle').click(function(){
+        $('.main-menu').toggleClass('show');
+    });
+
+    $('.main-menu a').click(function(){
+        $('.main-menu').removeClass('show');
+    });
+});
+
+$(window).on("scroll", function() {
+    checkScrollPosition();    
+});
 </script>
-
 </body>
 </html>
