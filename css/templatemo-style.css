@@ -60,7 +60,7 @@ p {
     display:none;
 }
 .navbar-brand {
-    color: #fff;
+    color: rgb(255, 0, 0);
     font-weight:300;
     font-size: 38px;
 }
