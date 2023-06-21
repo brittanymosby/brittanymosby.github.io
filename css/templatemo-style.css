@@ -17,9 +17,9 @@ a:focus {
 body{
     margin:0;
     padding:0;
-    background-image: url(../images/hexflower.jpg);
+    background-image: url(../images/white\ hex.jpg);
     background-repeat:round;
-    
+    background-size: 30%;
     font-family: 'Georgia', serif;
     font-size: 16px;
     font-weight:300;
@@ -110,7 +110,7 @@ p {
 .content-item {
     padding-right: 0px;
     padding-left: 0px;
-    min-height:400px !important;
+    /* min-height:100% !important; */
 }
 .content-item p:last-child {
     margin-bottom: 0;
