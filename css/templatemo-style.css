@@ -61,7 +61,7 @@ p {
 }
 .navbar-brand {
     color: rgb(141, 96, 0);
-    font-weight:300;
+    font-weight:900;
     font-size: 38px;
 }
 .navbar-brand:hover,
@@ -81,7 +81,7 @@ p {
     text-decoration:none;
     color:rgb(141, 96, 0);
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 900;
     padding: 10px 30px 0;    
 }
 .fixed-header ul li a:hover,
