@@ -17,8 +17,8 @@ a:focus {
 body{
     margin:0;
     padding:0;
-    background-image:url(../images/triangles.jpg);
-    background-repeat:no-repeat;
+    background-image:url(../images/kendrick.jpg);
+    background-repeat:repeat;
     background-size:100% 100%;
     font-family: 'Georgia', serif;
     font-size: 16px;
@@ -38,7 +38,7 @@ p {
 .fixed-header{
     width:100%;
     float:left;
-    /*background-color:#023D69;*/
+    background-color:#023D69;
     position:fixed;
     top:0;
     z-index:111;
