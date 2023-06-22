@@ -87,10 +87,10 @@ p {
 .fixed-header ul li a:hover,
 .fixed-header ul li .current{
     color: #5caedd;
-    border-top:2px solid #5caedd;
+    border-bottom:2px solid #5caedd;
 }
 .fixed-header {
-    background: transparent;
+    background: rgb(45, 0, 49);
 }
 .fixed-header.scroll {
     background: rgba(255, 255, 255, 0.5);
