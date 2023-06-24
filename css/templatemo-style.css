@@ -19,7 +19,7 @@ body{
     padding:0;
     background-image: url(../images/white\ hex.jpg);
     background-repeat:round;
-    background-size: 30%;
+    background-size: 50%;
     font-family: 'Georgia', serif;
     font-size: 16px;
     font-weight:300;
@@ -52,7 +52,7 @@ p {
     right: 17px;
     margin: 0;
     z-index: 99999999;
-    color: rgb(141, 96, 0);
+    color: #22577A;
     padding: 10px 10px;
     background-color: #b7e0ff;
     border: none;
@@ -400,7 +400,7 @@ p {
         top: 8px;
     }
     .navbar-toggle .icon-bar {
-        background-color: #006699;
+        background-color: #d21717;
     }
     
     .fixed-header ul li a:hover, 
@@ -415,7 +415,7 @@ p {
     }
     .main-menu ul {
         width: 100%;
-        background-color: #023D69;
+        background-color: #b7e0ff;
     }
     .main-menu {
         max-height: 0;
